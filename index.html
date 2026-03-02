@@ -6,9 +6,118 @@
     <meta name="description" content="My First HTML website">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <h1>Hello World</h1>
+  <body id="home" class="open-left">
+    <div id="offcanvas-left" class="hide">
+      <ul>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#quote">Quote 1</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#next.html">Next Page</a></li>
+      </ul>
+    </div>
+    <div class="togglebar">
+      <div class="toggle" onclick="toggleLeft()">
+        <i class="fa fa-bars"></i>
+      </div>
+    </div>
+    <div class="center">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#top">Top</a></li>
+            <li><a href="#quote">Quote 1</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#next.html">Next Page</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <main id="top">
+          <article>
+            <figure class="hero">
+              <img scr="https://www.tutorialspoint.com/html/images/html_images.jpg" alt="HTML picture"/>
+            <figcaption>
+              <h1>The HTML is most important part</h1>
+            </figcaption>
+            </figure>
+            <h2 style="font-size: 2em">WHAT IS HTML?</h2>
+            <hr>
+            <p>
+              <b>HTML is .....</b>
+            </p>
+            <blockquote cite="http://twitter.com">
+              "Every...."
+            </blockquote>
+  
+            <table class="styled">
+              <colgroup>
+                <col style="background-color: blue;">
+              </colgroup>
+              <colgroup>
+                <col style="background-color: #grey; span="2">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>Johnny.doe@gamil.com</td>
+                </tr>
+                <tr>
+                  <td>Jane</td>
+                  <td>Doe</td>
+                  <td>i_heart_johnny@gmail.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </main>
+        <footer>
+          <section>
+            <table class="styled">
+              <tr>
+                <th colspan="2">Work hours</th>
+              </tr>
+              <tr>
+                <td>Mon-Fri, 7am-6pm</td>
+              </tr>
+              <tr>
+                <td>Sat-Sun, closed</td>
+              </tr>
+            </table>
+            <table class="styled">
+              <tr>
+                <th colspan="2">Contact Info</th>  
+              </tr>
+              <tr>
+                <td>Cell:</td>
+                <td>123.345.6789</td>
+              </tr>
+              <tr>
+                <td>Email:</td>
+                <td>info@learninghtml.com</td>
+              </tr>
+            </table>
+          </section>
+          <section>
+            <form action="/a"action_page.php id="contact">
+              <legend><b>Contact Us</b></legend>
+              <input type="text" name="fullname" placeholder="Full name">
+              <input type="text" name="email" placeholder="Email">
+              <textarea name="msg" placeholder="Write message here"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </section>
+        </footer>
+      </section>
+    </div>
   </body>
 </html>
